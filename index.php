@@ -6,11 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>My first PHP page</h1>
     <?php
-        //declaration d'un variable 
-        $color = "red";
-        echo "<h1 style='color: $color'>AMINE</h1>";
+       echo(round(0.60));
+
     ?>
 </body>
 </html>
