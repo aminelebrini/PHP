@@ -10,7 +10,7 @@
     <?php 
     $servername = "localhost";
     $username   = "root";
-    $serverpass = "123456";
+    $serverpass = "your database pass";
     $dbname     = "db_test";
 
 try {
