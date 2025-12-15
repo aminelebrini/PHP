@@ -6,7 +6,6 @@
     <title>DB</title>
 </head>
 <body>
-   <body>
     <?php 
     $servername = "localhost";
     $username   = "root";
@@ -25,7 +24,5 @@ try {
     }
 
 ?>
-
-</body>
 </body>
 </html>
