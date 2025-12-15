@@ -10,7 +10,7 @@
     <?php 
     $servername = "localhost";
     $username   = "root";
-    $serverpass = "your database pass";
+    $serverpass = "123456";
     $dbname     = "db_test";
 
 try {
@@ -19,7 +19,6 @@ try {
         $username,
         $serverpass
     );
-    $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "Connexion OK";
     } catch (PDOException $e) {
         echo "Erreur de connexion";
