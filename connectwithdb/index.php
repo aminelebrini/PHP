@@ -9,20 +9,18 @@
     <?php 
     $servername = "localhost";
     $username   = "root";
-    $serverpass = "your database pass";
+    $serverpass = "your database password";
     $dbname     = "db_test";
 
-try {
-    $connection = new PDO(
-        "mysql:host=$servername;dbname=$dbname;charset=utf8",
-        $username,
-        $serverpass
-    );
-    echo "Connexion OK";
-    } catch (PDOException $e) {
-        echo "Erreur de connexion";
-    }
 
+    $connect = mysqli_connect($servername, $username, $serverpass, $dbname);
+
+    if(!$connect)
+    {
+        echo "Erreur de connexion : " . mysqli_connect_error();
+    }else{
+        echo "CONNEXION OK";
+    }
 ?>
 </body>
 </html>
